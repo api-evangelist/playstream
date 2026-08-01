@@ -1,4 +1,16 @@
 aid: playstream
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/playstream.png
 name: Playstream
 description: Playstream is a company surfaced as a portfolio company of general-catalyst and added to
   the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
@@ -12,7 +24,22 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  notes: >-
+    No public API/developer surface discovered. A real company at playstream.gg
+    (livestream viewer-engagement / stream monetization, "real-time on-screen
+    challenges") is a candidate match but could NOT be verified as the
+    General Catalyst portfolio company (WebSearch budget exhausted; a distinct
+    unrelated plaistream.com client portal also exists). playstream.gg is a
+    client-side SPA: every probed path (/.well-known/*, /openapi.json,
+    /llms.txt) returns the index.html (text/html), not a real artifact, and
+    api.playstream.gg is offline-for-maintenance. No OpenAPI/well-known/llms.txt
+    to enrich; identity left unwired to avoid attaching an unconfirmed company.
 tags:
 - Company
 apis: []
